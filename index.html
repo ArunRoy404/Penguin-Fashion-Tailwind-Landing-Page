@@ -15,10 +15,63 @@
 
     <!-- tailwind cdn  -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    
 
+
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/cf94209d77.js" crossorigin="anonymous"></script>
+
+    <!-- setting fonts  -->
+    <style>
+        .font-montserrat {
+            font-family: "Montserrat", serif;
+        }
+
+        .font-bebas-neue {
+            font-family: "Bebas Neue", serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", serif;
+        }
+    </style>
 </head>
-<body>
+    <body class="font-roboto">
+        <header class="py-10 bg-[#FFFBF0]">
+            <!-- navbar  -->
+            <nav class="max-w-7xl mx-auto flex items-center justify-between mb-10 ">
+                <a href="">
+                    <img class="w-72" src="assets/images/icons/logo.png" alt="">
+                </a>
+                <div>
+                    <button class="md:hidden"><i class="fa-solid fa-bars"></i></button>
+                    <div class="hidden md:block">
+                        <ul class="flex space-x-12">
+                            <li class="text-[#3C3C3C]"><a href="">Home</a></li>
+                            <li class="text-[#3C3C3C]"><a href="">Product</a></li>
+                            <li class="text-[#3C3C3C]"><a href="">About us</a></li>
+                            <li class="text-[#3C3C3C]"><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-</body>
+            <!-- banner  -->
+            <section class="max-w-7xl mx-auto md:flex justify-between">
+                <div class="space-y-5">
+                    <h1 class="font-bebas-neue text-8xl"><span class="text-[#FABE4C]">Be the Penguins</span><br>
+                        <span class="text-[#363958]">of Winter</span>
+                    </h1>
+                    <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry.</p>
+                    <button class="text-white px-5 py-7 rounded-xl  bg-linear-to-b from-[#A4BC46] to-[#85A019]"><i class="mr-2 fa-solid fa-cart-shopping"></i>Buy Now</button>
+                </div>
+                <div>
+                    <img src="assets/images/model.png" alt="">
+                </div>
+            </section>
+        </header>
+
+        <main></main>
+        <footer></footer>
+    </body>
 </html>
